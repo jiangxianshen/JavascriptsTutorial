@@ -1,0 +1,30 @@
+<!--JavaScript 对象是拥有属性和方法的数据。
+使用以下语法创建对象方法：
+methodName : function() { code lines }
+使用以下语法访问对象方法：
+objectName.methodName()-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>创建对象</h1>
+<p>访问对象方法</p>
+<p id="demo"></p>
+<script>
+    var person={
+        firstname:"john",
+        lastname:"soe",
+        id:5566,
+        fullname: function () {
+            return this.firstname+ " " + this.lastname;
+        }
+    };
+    document.getElementById("demo").innerHTML=person.fullname();
+</script>
+</body>
+</html>

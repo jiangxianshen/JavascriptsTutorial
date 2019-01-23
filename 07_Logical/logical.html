@@ -1,0 +1,36 @@
+<!--逻辑运算符
+逻辑运算符用于测定变量或值之间的逻辑。
+给定 x=6 以及 y=3，下表解释了逻辑运算符：
+
+运算符	描述	例子
+&&	   and	   (x < 10 && y > 1) 为 true
+||	   or	   (x==5 || y==5) 为 false
+!	   not	   !(x==y) 为 true
+
+条件运算符
+JavaScript 还包含了基于某些条件对变量进行赋值的条件运算符。
+语法
+variablename=(condition)?value1:value2
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>点击检测是否达到投票年龄</p>
+输入年龄:<input id="age" value="18" />
+<p>是否达到</p>
+<p id="demo"></p>
+<button type="button" onclick="myFunction()">检测</button>
+<script>
+    function myFunction() {
+        var age1,vote;
+        age1=document.getElementById("age").value;
+        vote=(age1<18)?"年龄太小":"已达到法定年龄";
+        document.getElementById("demo").innerHTML=vote;
+    }
+</script>
+</body>
+</html>

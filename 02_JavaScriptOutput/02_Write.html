@@ -1,0 +1,19 @@
+<!--写到 HTML 文档
+请使用 document.write() 仅仅向文档输出写内容。
+如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖。-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>这是标题</h1>
+<p>这是段落</p>
+<button type="button" onclick="myFunction()">显示日期</button>
+<script>function myFunction() {
+    document.write(Date())
+}</script>
+</body>
+</html>
