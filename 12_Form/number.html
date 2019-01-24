@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myFunction() {
+            var txt;
+            var x=document.getElementById("num").value;
+            if (isNaN(x) || x<1 || x>10){
+                txt="输入错误";
+            }
+            else{
+                txt="输入正确";
+            }
+            document.getElementById("demo").innerHTML=txt;
+        }
+    </script>
+</head>
+<body>
+<h1>验证输入</h1>
+<p>输入1到10数字</p>
+<input id="num">
+<p id="demo"></p>
+<button onclick="myFunction()">提交</button>
+</body>
+</html>
