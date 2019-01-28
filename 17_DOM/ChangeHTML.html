@@ -1,0 +1,20 @@
+<!--1、改变 HTML 输出流-->
+<!--document.write() 可用于直接向 HTML 输出流写内容。
+绝对不要在文档(DOM)加载完成之后使用 document.write()。这会覆盖该文档。-->
+
+<!--2、改变 HTML 内容
+修改 HTML 内容的最简单的方法是使用 innerHTML 属性
+-->
+
+<!--3、改变 HTML 属性-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="smile.gif" id="image" width="160" height="120">
+<script>document.getElementById("image").src="landscape.gif";</script>
+</body>
+</html>

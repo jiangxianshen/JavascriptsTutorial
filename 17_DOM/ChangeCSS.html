@@ -1,0 +1,24 @@
+<!--改变 HTML 样式
+document.getElementById(id).style.property=新样式
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="p1">hello world!</p>
+<p id="p2">hello js!</p>
+<button onclick="myFunction()">点击</button>
+<script>
+    document.getElementById("p1").style.color="red";
+    document.getElementById("p1").style.fontFamily="Arial";
+    document.getElementById("p1").style.fontSize="larger";
+    function myFunction() {
+        document.getElementById("p2").style.color="blue";
+    }
+</script>
+</body>
+</html>

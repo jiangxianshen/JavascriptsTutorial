@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{width:200px; height:200px;float:left;border: 1px solid black;margin: 10px;}
+    </style>
+    <script>
+        window.onload=function () {
+            var oDiv1=document.getElementsByTagName("div");
+            for(var i=0;i<oDiv1.length;i++){
+                oDiv1[i].style.background='red';
+            }
+            var oBtn1=document.getElementById("btn1");
+            var oBtn2=document.getElementById("btn2");
+            var oBtn3=document.getElementById("btn3");
+            var oDiv2=document.getElementById("div1");
+            var ach=oDiv2.getElementsByTagName("input");
+            oBtn1.onclick=function () {
+                for(var i=0;i<ach.length;i++){
+                    ach[i].checked=true;
+                }
+            }
+            oBtn2.onclick=function () {
+                for(var i=0;i<ach.length;i++){
+                    ach[i].checked=false;
+                }
+            }
+            oBtn3.onclick=function () {
+                for(var i=0;i<ach.length;i++){
+                    if(ach[i].checked == false){
+                        ach[i].checked=true;
+                    }
+                    else{ach[i].checked=false;}
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div><br>
+<input id="btn1" type="button" value="全选"><br>
+<input id="btn2" type="button" value="不选"><br>
+<input id="btn3" type="button" value="反选"><br>
+<div id="div1">
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+    <input type="checkbox"><br>
+</div>
+
+
+
+</body>
+</html>

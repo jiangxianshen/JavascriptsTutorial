@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>箭头函数</h1>
+<input id="demo1">
+*
+<input id="demo2">
+<button onclick="myFunction()">点击</button><br>
+结果:<p id="demo3"></p>
+<script>
+    function myFunction() {
+        const z=(x,y)=>{return x*y};
+        x=document.getElementById("demo1").value;
+        y=document.getElementById("demo2").value;
+        document.getElementById("demo3").innerHTML=z(x,y)
+    }
+</script>
+
+</body>
+</html>

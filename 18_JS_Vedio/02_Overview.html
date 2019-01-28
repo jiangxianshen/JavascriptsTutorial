@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1 {width:200px;height:100px;background: red;}
+        #div2 {width:200px;height:200px;background: red;}
+    </style>
+    <script>
+        function setColor(color) {
+            var oDiv=document.getElementById("div1");
+            oDiv.style.background=color;
+        }
+        function setStyle(name,value) {
+            var oDiv=document.getElementById("div2");
+            oDiv.style[name]=value;
+        }
+    </script>
+</head>
+<body>
+<button onclick="setColor('green')">变绿</button>
+<button onclick="setColor('yellow')">变黄</button>
+<button onclick="setColor('black')">变黑</button>
+<P id="div1"></P>
+<button onclick="setStyle('width','400px')">变宽</button>
+<button onclick="setStyle('height','400px')">变高</button>
+<button onclick="setStyle('background','green')">变绿</button>
+<p id="div2"></p>
+</body>
+</html>
